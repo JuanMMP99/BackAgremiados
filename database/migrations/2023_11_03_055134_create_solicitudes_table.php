@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('solicitudes', function (Blueprint $table) {
             $table->id();
+            $table->string('NUE', 10);
+            $table->string('ruta_archivo', 30);
             $table->timestamps();
         });
     }
